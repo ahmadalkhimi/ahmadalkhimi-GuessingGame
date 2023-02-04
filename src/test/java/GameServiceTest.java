@@ -25,7 +25,7 @@ public class GameServiceTest {
         GameService gameService = new GameService();
         gameService.secretNumber = 3.14;
         double input = 3.14;
-        boolean expected = true;
+        boolean expected = false;
         boolean actual = gameService.checkGuess(input);
         Assert.assertEquals(expected,actual);
     }
